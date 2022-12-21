@@ -84,10 +84,19 @@ $(document).ready(() => {
   const chartOptions = {
     scales: {
       yAxes: [{
-        id: 'Temperature',
+        id: 'temperature',
         type: 'linear',
         scaleLabel: {
           labelString: 'Temperature (ºC)',
+          display: true,
+        },
+        position: 'left',
+      },
+      {
+        id: 'temperatureLab1',
+        type: 'linear',
+        scaleLabel: {
+          labelString: 'TemperatureLab1 (ºC)',
           display: true,
         },
         position: 'left',
